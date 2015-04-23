@@ -114,7 +114,7 @@ function setTemperature(thermostatId, temperature, callbackFn){
 function login(callbackFn){
     console.log("Connecting as user: "+localStorage.honeywellUsername);
     ajaxCall({
-        url: 'https://mytotalconnectcomfort.com/portal/',
+        url: 'https://mytotalconnectcomfort.com/portal',
         params: 'UserName=' + localStorage.honeywellUsername
             + '&Password=' + localStorage.honeywellPassword
             + '&timeOffset=240',
